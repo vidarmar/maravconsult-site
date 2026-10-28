@@ -131,6 +131,10 @@
   .app .sub{font-family:var(--mono);font-size:12px;color:var(--dim);margin:4px 0 12px}
   .app p{font-size:15px;color:var(--muted);flex:1}
   .app .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+  .app-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line-soft);font-family:var(--mono);font-size:12.5px}
+  .app-links a{color:var(--accent);display:inline-flex;align-items:center;gap:6px}
+  .app-links a::after{content:"↗";font-size:11px;opacity:.7}
+  .app-links a:hover{color:#ecc565;text-decoration:underline;text-underline-offset:3px}
   .chip{font-family:var(--mono);font-size:11px;padding:4px 9px;border:1px solid var(--line);border-radius:20px;color:var(--muted)}
 
   .about{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
@@ -422,6 +426,11 @@
           <div class="sub">iOS · Consumer fitness</div>
           <p>A calm, no-nonsense strength programme for men over 50 — three full-body sessions a week, joint-friendly exercise swaps, illustrated how-tos and Apple Health heart-rate readings.</p>
           <div class="chips"><span class="chip">iOS</span><span class="chip">Apple Health</span><span class="chip">Subscription</span></div>
+          <div class="app-links">
+            <a href="https://vidarmar.github.io/garpur-jarl/support.html" target="_blank" rel="noopener">Support</a>
+            <a href="https://vidarmar.github.io/garpur-jarl/privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+            <a href="https://vidarmar.github.io/garpur-jarl/terms.html" target="_blank" rel="noopener">Terms of Use</a>
+          </div>
         </div>
         <div class="app">
           <div class="icon" style="background:#2a1f33;color:#d9a3c9">W</div>
