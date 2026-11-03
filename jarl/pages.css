@@ -1,0 +1,35 @@
+/* Jarl info pages: same Fjord palette as the app */
+:root{--bg:#ECEEEE;--surface:#FFFFFF;--ink:#16212B;--muted:#56626D;--line:#CDD5DA;--accent:#1F4B6E;--brass:#94692A;--hero:#16344C;--hero-ink:#EEF2F5;--hero-brass:#D9B064;
+  --display:'Archivo','Arial Narrow',Arial,sans-serif;--body:'Atkinson Hyperlegible',system-ui,-apple-system,'Segoe UI',sans-serif}
+@media (prefers-color-scheme: dark){:root{--bg:#0E151C;--surface:#152029;--ink:#E4EAEF;--muted:#9AA8B4;--line:#2A3845;--accent:#8CB9DA;--brass:#D6AD62;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+a{color:var(--accent);text-underline-offset:3px}
+.top{background:var(--hero);color:var(--hero-ink);padding-top:env(safe-area-inset-top,0px)}
+.top .in,.foot .in{max-width:720px;margin:0 auto;padding:16px 20px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-stretch:112%;font-weight:800;letter-spacing:.2em;color:var(--hero-brass);text-decoration:none;font-size:1.4rem}
+.top span{color:#A9BBCB;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+.doc{max-width:720px;margin:0 auto;padding-inline:20px;padding-block:28px 48px}
+.eyebrow{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0}
+h1,h2{font-family:var(--display);font-stretch:112%;line-height:1.15;text-wrap:balance}
+h1{font-size:2rem;font-weight:800;margin:.2em 0 .3em}
+h2{font-size:1.2rem;font-weight:800;margin:1.8em 0 .4em}
+.meta{color:var(--muted);font-size:.9rem;margin-top:0}
+.summary{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--brass);border-radius:12px;padding:6px 20px 14px;margin:20px 0}
+.summary h2{margin-top:.8em}
+ul{padding-left:1.2em}
+li{margin:.25em 0}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:10px 0}
+summary{cursor:pointer;font-weight:700}
+details p{margin:.6em 0 .2em}
+.note{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:16px;margin-top:32px}
+.foot{border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.foot .in{font-size:.9rem;color:var(--muted);gap:20px}
+/* Promotion page */
+.hero{background:var(--hero);color:var(--hero-ink)}
+.hero .doc{padding-block:40px 48px}
+.hero .eyebrow{color:#A9BBCB}
+.hero h1{font-size:2.4rem}
+.hero p{color:#C9D5DF;max-width:34em}
+.feat li{margin:.45em 0}
