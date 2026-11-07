@@ -138,6 +138,14 @@
   .app-links a::after{content:"↗";font-size:11px;opacity:.7}
   .app-links a:hover{color:#ecc565;text-decoration:underline;text-underline-offset:3px}
   .chip{font-family:var(--mono);font-size:11px;padding:4px 9px;border:1px solid var(--line);border-radius:20px;color:var(--muted)}
+  .chip.review{border:1px dashed rgba(224,180,76,.5);color:var(--accent);background:rgba(224,180,76,.08);display:inline-flex;align-items:center;gap:6px}
+  .chip.review::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.85}
+  .app .icon.img{overflow:hidden;padding:0;box-shadow:0 0 0 1px var(--line)}
+  .app .icon.img img{width:100%;height:100%;display:block}
+  .app p:has(+ .feats){flex:none}
+  .app .feats{flex:1;align-content:start;list-style:none;margin:14px 0 0;padding:0;display:grid;gap:6px;font-size:14px;color:var(--muted)}
+  .app .feats li{padding-left:16px;position:relative}
+  .app .feats li::before{content:"—";position:absolute;left:0;color:var(--dim)}
   .chip.dev{border:1px dashed rgba(95,180,217,.45);color:var(--accent-2);background:rgba(95,180,217,.08)}
 
   .about{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
@@ -435,11 +443,17 @@
           </div>
         </div>
         <div class="app">
-          <div class="icon" style="background:#1d2c46;color:#e0b44c">J</div>
+          <div class="icon img"><img src="img/apps/jarl.png" alt="Jarl app icon" width="44" height="44"></div>
           <h4>Jarl: Strength after 50</h4>
-          <div class="sub">iOS · Consumer fitness</div>
-          <p>A calm, no-nonsense strength programme for men over 50 — three full-body sessions a week, joint-friendly exercise swaps, illustrated how-tos and Apple Health heart-rate readings.</p>
-          <div class="chips"><span class="chip">iOS</span><span class="chip">Apple Health</span><span class="chip">Subscription</span></div>
+          <div class="sub">iOS · New release in App Store review</div>
+          <p>A calm, no-nonsense strength programme for men over 50 — full-body trainings that build and keep muscle, with plain explanations and recovery that respects your age.</p>
+          <ul class="feats">
+            <li>Full-body trainings of 20–60 minutes, 2–6 days a week</li>
+            <li>Joint-friendly swaps for knees, shoulders and lower back, and a check-in before each training</li>
+            <li>Illustrated how-to for every exercise, plus a guided mobility routine for rest days</li>
+            <li>Heart rate from Apple Watch, Garmin or a chest strap; progress with age-group benchmarks</li>
+          </ul>
+          <div class="chips"><span class="chip">iOS</span><span class="chip">Apple Health</span><span class="chip">Subscription</span><span class="chip review">In App Store review</span></div>
           <div class="app-links">
             <a href="jarl/" target="_blank" rel="noopener">About Jarl</a>
             <a href="https://vidarmar.github.io/garpur-jarl/support.html" target="_blank" rel="noopener">Support</a>
@@ -448,11 +462,23 @@
           </div>
         </div>
         <div class="app">
-          <div class="icon" style="background:#2a1f33;color:#d9a3c9">W</div>
-          <h4>Strength Training for women in perimenopause, menopause and beyond</h4>
-          <div class="sub">iOS · In development</div>
-          <p>A sister app to Jarl — a progressive strength programme adapted to the realities of this stage of life.</p>
-          <div class="chips"><span class="chip">iOS</span><span class="chip dev">In development</span></div>
+          <div class="icon img"><img src="img/apps/vitalher.png" alt="VitalHer app icon" width="44" height="44"></div>
+          <h4>VitalHer: Strength training for menopause</h4>
+          <div class="sub">iOS · Sister app to Jarl</div>
+          <p>Strength training for women from 35 in perimenopause, menopause and after — whether new to weights or coming back after a break. A short check-in before each session adapts the workout to hot flushes, poor sleep, stress or low energy.</p>
+          <ul class="feats">
+            <li>Full-body plans of 20–60 minutes, 2–6 days a week, at the gym or at home with dumbbells</li>
+            <li>Symptom diary with 4, 8 and 12-week trends and a PDF summary to share with your doctor</li>
+            <li>Apple Health: heart rate, HRV, VO₂ max and sleep, plus live pulse from a watch or chest strap</li>
+            <li>On-device AI coach; no accounts, ads or trackers — data stays on the iPhone</li>
+          </ul>
+          <div class="chips"><span class="chip">iOS</span><span class="chip">Apple Health</span><span class="chip">Subscription</span><span class="chip review">In App Store review</span></div>
+          <div class="app-links">
+            <a href="https://vidarmar.github.io/vitalher/" target="_blank" rel="noopener">About VitalHer</a>
+            <a href="https://vidarmar.github.io/vitalher/support.html" target="_blank" rel="noopener">Support</a>
+            <a href="https://vidarmar.github.io/vitalher/privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+            <a href="https://vidarmar.github.io/vitalher/terms.html" target="_blank" rel="noopener">Terms of Use</a>
+          </div>
         </div>
         <div class="app">
           <div class="icon" style="background:#14303a;color:#5fb4d9">L</div>
